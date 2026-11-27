@@ -90,3 +90,34 @@ footer {
     margin-left: 30px;
     margin-right: 20px;
 }
+
+
+
+.valoracion {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+
+.valoracion input[type="radio"] {
+    display: none !important;
+}
+
+
+.valoracion label {
+    font-size: 25px;
+    color: #777;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+
+.valoracion label:hover,
+.valoracion label:hover ~ label,
+.valoracion input:checked ~ label {
+    color: gold;
+}
